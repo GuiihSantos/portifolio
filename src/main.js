@@ -35,10 +35,8 @@ const createModal = (idProject) => {
                 
                 <div>
                     <P>Tecnologia Utilizada</P>
-                    <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JAVASCRIPT</li>
+                    <ul id='list-tecn'>
+
                     </ul>
                 </div>
             </div>
@@ -59,8 +57,23 @@ const createModal = (idProject) => {
 
   modal.append(div);
 
+  optionsTecn(currentProject);
+
   const buttonCloseModal = document.getElementById("close-modal");
   buttonCloseModal.onclick = closeModal;
+};
+
+const optionsTecn = (idProject) => {
+  const technologies = idProject.tecnologia;
+  const ul = document.getElementById("list-tecn");
+
+  ul.innerHTML = "";
+  for (let currentTecn of technologies) {
+    const li = document.createElement("li");
+
+    li.innerText += currentTecn;
+    ul.append(li);
+  }
 };
 
 const closeModal = () => {
