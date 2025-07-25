@@ -376,8 +376,26 @@ footer p{
 #fade.hide {
     opacity: 0;
     pointer-events: none;
-}
+}-mo
 
 #modal.hide {
     top: 0;
+}
+
+@media (width < 700px) {
+    .modal-head h2 {
+        margin: auto;
+    }
+
+    .modal-body {
+        flex-direction: column;
+    }
+    
+    .img-modal {
+        margin: auto;
+    }
+
+    .modal_body_info {
+        margin-top: 1rem;
+    }
 }
