@@ -398,4 +398,12 @@ footer p{
     .modal_body_info {
         margin-top: 1rem;
     }
+
+    .modal-footer {
+        font-size: small;
+    }
+    
+    .modal-footer img {
+        margin-right: 0;
+    }
 }
