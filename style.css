@@ -425,10 +425,11 @@ footer p{
     
     .img-modal {
         margin: auto;
+        margin-bottom: 1rem;
     }
 
     .modal_body_info {
-        margin-top: 1rem;
+        margin: auto;
     }
 
     .modal-footer {
@@ -436,6 +437,6 @@ footer p{
     }
     
     .modal-footer img {
-        margin-right: 0;
+        margin-right: 3px;
     }
 }
